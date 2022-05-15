@@ -23,7 +23,7 @@ def intro_message():
     Retorna verdadeiro independentemente de qualquer tecla pressionada.
     """
     print("======== Está pronto para testar seus conhecimentos sobre computação? ========")
-    print("São 8 perguntas, você pode pular qualquer uma delas digitando 'skip' a qualquer momento")
+    print("São  perguntas, você pode pular qualquer uma delas digitando 'skip' a qualquer momento")
     input("\n\n____________Pressione qualquer tecla para começar!____________")
     return True
 
