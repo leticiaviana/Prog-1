@@ -1,0 +1,6 @@
+Em quantos períodos está dividido a história da computação? A) 5 B) 8 C) 2 D) 4|d|
+Qual desses NÃO é um SO (sistema operacional)?A) Windows B) linux C) Apple D) MAC OS X|c|
+"Random Access Memory” é mais conhecida como: A) Memória ROM B)Memória Interna C)Memória externa D)Memória RAM|d|
+O que é Hardware? A) A parte lógica do computador B)A parte física do computador C)A parte burocrática do computador D)As pessoas que usam o computador|b|
+O que é Software? A) A parte lógica do computador B)A parte física do computador C)A parte burocrática do computador D)As pessoas que usam o computador|a|
+O que é antivírus de computador? A) É um antivírus contra malária, febre amarela e tosse B)É um hardware contra vírus C)É um software contra vírus D)É um programa que prejudica o computador|c|

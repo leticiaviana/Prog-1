@@ -1,0 +1,4 @@
+Como funcionavam os computadores da primeira geração?  A) Funcionavam por meio de transistores   B) Funcionavam por meio de circuitos e válvulas eletrônicas.  C) Funcionavam por circuitos integrados  D) Não funcionavam|b|
+Como funcionavam os computadores da segunda geração?   A) Funcionavam por meio de transistores   B) Funcionavam por meio de circuitos e válvulas eletrônicas.   C) Funcionavam por circuitos integrados   D) Não funcionavam|a|
+Como funcionavam os computadores da terceira geração?  A) Funcionavam por meio de transistores  B) Funcionavam por meio de circuitos e válvulas eletrônicas.  C) Funcionavam por circuitos integrados  D) Não funcionavam|c|
+Como funcionava os computadores da quarta geração?   A) São incluidos chips  B) São incluídos os microprocessadores com gasto cada vez menor de energia   C) São incluídos placas de video  D) São incluídos chips que gastam muita energia|b|

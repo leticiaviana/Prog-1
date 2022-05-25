@@ -1,0 +1,3 @@
+Qual o nome da máquina considerada o primeiro computador? A) Ábaco B) Fugaku C) SuperMUC D) Sequoia|a|
+Quem é considerado o o pai da informática? A) Charles Babbage  B) Alan Turing C) Guido Von Rossum D) Albert Einstein|a|
+Qual é o menor número decimal? A) -127  B) -128  C) -129  D) -112|b|
