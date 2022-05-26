@@ -13,7 +13,7 @@ def check_ans(difficult, question, ans, attempts, score):
     if question['answer'].lower() == ans.lower() and difficult == 'facil':
         print(f"Resposta certa! \nSua pontuação é {score + 1}!")
         return True
-    elif question['answer'].lower() == ans.lower() and difficult == 'medio':
+    elif question['answer'].lower() == ans.lower() and difficult == 'normal':
         print(f"Resposta certa! \nSua pontuação é {score + 2}!")
         return True
     elif question['answer'].lower() == ans.lower() and difficult == 'dificil':
