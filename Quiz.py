@@ -1,5 +1,6 @@
 import json
 
+# função que lê os arquivos com as perguntas e dificuldades.
 def read_question(dificuldade):
     with open(f'perguntas-{dificuldade}.txt','r', encoding='utf-8') as f:
         content = f.readlines()
@@ -9,6 +10,7 @@ def read_question(dificuldade):
             resposta = split[1]
             quiz[dificuldade].append({'question': pergunta, 'answer': resposta})
 
+#função que dá a pontuação de acordo com a dificuldade
 def check_ans(difficult, question, ans, attempts, score):
     if question['answer'].lower() == ans.lower() and difficult == 'facil':
         print(f"Resposta certa! \nSua pontuação é {score + 1}!")
@@ -23,18 +25,14 @@ def check_ans(difficult, question, ans, attempts, score):
         print(f"Resposta errada \nVocê tem {attempts - 1} tentativas! \nTente novamente...")
         return False
 
-
+#função com a mensagem de introdução, retorna true ao usuário apertar qualquer tecla.
 def intro_message():
-    """
-   Apresenta o usuário ao questionário e às regras e recebe uma entrada do cliente para iniciar o questionário.
-    Retorna verdadeiro independentemente de qualquer tecla pressionada.
-    """
     print("\n\n")
     print("======== Está pronto para testar seus conhecimentos sobre computação? ========")
     print("São  perguntas, você pode pular qualquer uma delas digitando 'skip' a qualquer momento")
     input("\n\n____________Pressione qualquer tecla para começar!____________")
     return True
-
+#while que mantem o jogo em loop
 while True:
     quiz = {
         'facil': [],
@@ -59,7 +57,7 @@ while True:
         difficult = 'dificil'
     elif difficult == 4:
         break
-
+#while que faz a validação de pontos.
     while True:
         score = 0
         for question in quiz[difficult]:
@@ -83,10 +81,8 @@ while True:
         break
     print(f"\n\nSua pontuação final é {score}!\n\n Obrigada por jogar!\n\n")
 
-    # [ ] Ler o arquivo players.json
-    # [ ] Adicionar o jogar na lista com a pontuação
-    # [ ] Escreve o arquivo de novo
-
+   
+    #leitura de pontuação e tratamento para formar o ranking. 
     jogadores = None
 
     with open('players.json', 'r') as f:
