@@ -69,6 +69,7 @@ print(f"\n\nSua pontuação final é {score}!\n\n Obrigada por jogar!\n\n")
 
 jogadores = None
 
+
 with open('players.json', 'r') as f:
     jogadores = json.load(f)
 
@@ -82,5 +83,12 @@ with open('players.json','w') as f:
 
 print('===RANKING===\n')
 
-for jogador_dict in jogadores:
+def ranking(jogador): 
+    return jogador['pontuacao']
+
+jogadores.sort(key=ranking)
+jogadores = jogadores[::-1]
+
+for i in range(10):
+    jogador_dict = jogadores[i]
     print(f'{jogador_dict["nome"]} - {jogador_dict["pontuacao"]}')
