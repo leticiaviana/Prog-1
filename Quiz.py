@@ -2,6 +2,7 @@
 from perguntas import quiz 
 import json
 
+#pontuação de acordo com a dificuldade
 def check_ans(difficult, question, ans, attempts, score):
     if question['answer'].lower() == ans.lower() and difficult == 'facil':
         print(f"Resposta certa! \nSua pontuação é {score + 1}!")
@@ -16,12 +17,8 @@ def check_ans(difficult, question, ans, attempts, score):
         print(f"Resposta errada \nVocê tem {attempts - 1} tentativas! \nTente novamente...")
         return False
 
-
+#mensagem de introdução
 def intro_message():
-    """
-   Apresenta o usuário ao questionário e às regras e recebe uma entrada do cliente para iniciar o questionário.
-    Retorna verdadeiro independentemente de qualquer tecla pressionada.
-    """
     print("======== Está pronto para testar seus conhecimentos sobre computação? ========")
     print("São  perguntas, você pode pular qualquer uma delas digitando 'skip' a qualquer momento")
     input("\n\n____________Pressione qualquer tecla para começar!____________")
@@ -40,6 +37,7 @@ elif difficult == 2:
 elif difficult == 3:
     difficult = 'dificil'
 
+#Gerador de perguntas e velidação de pontos
 while True:
     score = 0
     for question in quiz[difficult]:
@@ -63,10 +61,7 @@ while True:
     break
 print(f"\n\nSua pontuação final é {score}!\n\n Obrigada por jogar!\n\n")
 
-# [ ] Ler o arquivo players.json
-# [ ] Adicionar o jogar na lista com a pontuação
-# [ ] Escreve o arquivo de novo
-
+#raking com pontuação do melhor para o pior
 jogadores = None
 
 
